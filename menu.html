@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Lassi Corner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .menu-section {
+            background: #f9f9f9;
+            padding: 3rem 0;
+        }
+        .menu-board {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu-category {
+            background: #fff;
+            border: 2px solid #e67e22;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+            min-width: 220px;
+            max-width: 260px;
+            flex: 1 1 220px;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .menu-category h2 {
+            background: #e67e22;
+            color: #fff;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0.75rem 0;
+            border-radius: 10px 10px 0 0;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .menu-items {
+            padding: 1rem 1.2rem 1.2rem 1.2rem;
+            flex: 1;
+        }
+        .menu-item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 1px dashed #eee;
+            padding: 0.4rem 0;
+            font-size: 1rem;
+        }
+        .menu-item-row:last-child {
+            border-bottom: none;
+        }
+        .menu-item-name {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        .menu-item-price {
+            color: #e67e22;
+            font-weight: 600;
+            margin-left: 1rem;
+            white-space: nowrap;
+        }
+        @media (max-width: 900px) {
+            .menu-board {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-category {
+                max-width: 95vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Lassi Corner</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Our Menu</h1>
+        <p>Discover our delicious offerings at Lassi Corner</p>
+    </section>
+
+    <section class="menu-section">
+        <div class="menu-board">
+            <div class="menu-category">
+                <h2>LASSI</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Sweet Lassi</span><span class="menu-item-price">₹40/₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Salt Lassi</span><span class="menu-item-price">₹40/₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mango Lassi</span><span class="menu-item-price">₹50/₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Roohafza Lassi</span><span class="menu-item-price">₹50/₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mango Mint Lassi (Season Special)</span><span class="menu-item-price">₹60/₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Fruit Lassi</span><span class="menu-item-price">₹65/₹85</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Dry Fruit Lassi</span><span class="menu-item-price">₹70/₹90</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Butterscotch Lassi</span><span class="menu-item-price">₹70/₹90</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Kesar Badam Lassi</span><span class="menu-item-price">₹70/₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>FRUIT SALAD</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Fruit Salad</span><span class="menu-item-price">₹90</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Fruit Salad W/ Ice Cream</span><span class="menu-item-price">₹120</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>FALOODA</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Falooda</span><span class="menu-item-price">₹75</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Kulfi Falooda</span><span class="menu-item-price">₹85</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chandini Chowk Special</span><span class="menu-item-price">₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>KULFI</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Kesar Badam Kulfi</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Kesar Pista Kulfi</span><span class="menu-item-price">₹70</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>SUNDAES</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Brownie with Ice Cream</span><span class="menu-item-price">₹100</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Sizzler Brownie</span><span class="menu-item-price">₹110</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Nutella Brownie</span><span class="menu-item-price">₹140</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Death by Chocolate</span><span class="menu-item-price">₹150</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Dry Fruit</span><span class="menu-item-price">₹170</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>COLD COFFEE</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Hard Rock Coffee</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">8PM Coffee</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Kit Kat Coffee</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Belgian Coffee</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chud Coffee</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Caramel Coffee</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Coffee with Cream (Ice Cream)</span><span class="menu-item-price">₹80</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>MILKSHAKES</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Vanilla/Oreo MilkShake</span><span class="menu-item-price">₹40/₹50</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mississippi Mud MilkShake</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Butterscotch MilkShake</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Dry Fruit MilkShake</span><span class="menu-item-price">₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>THICK SHAKES</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Vanilla MilkShake with Ice Cream</span><span class="menu-item-price">₹65</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Oreo MilkShake with Ice Cream</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chocolate w/ Ice Cream</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mississippi Mud with Ice Cream</span><span class="menu-item-price">₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>CHIA SEEDS</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Chia Seed Lemonade</span><span class="menu-item-price">₹55</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chia Seed Strawberry Lassi</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chia Seed Blueberry Smoothie</span><span class="menu-item-price">₹120</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chia Seed Bubble Tea</span><span class="menu-item-price">₹130</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chia Seed Belgian Chocolate</span><span class="menu-item-price">₹140</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>BOBA TEA</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Taro Lava Boba Tea</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Blueberry Boba Tea</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mango Boba Tea</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Matcha Lava Boba Tea</span><span class="menu-item-price">₹90</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Passion Fruit Boba Tea</span><span class="menu-item-price">₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>PROTEIN SHAKE</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Whey Protein Shake</span><span class="menu-item-price">₹175</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Chocolate Protein Shake</span><span class="menu-item-price">₹185</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>JUICES</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Lime Juice</span><span class="menu-item-price">₹50</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mosambi Juice</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">WaterMelon Juice</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mint Lime Crusher</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">ABC - (Apple Beetroot Carrot Juice)</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Pomegranate Juice</span><span class="menu-item-price">₹80</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>SODA</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Lime Soda</span><span class="menu-item-price">₹50</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">WaterMelon With Soda</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mosambi Juice With Soda</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Mint Lime Crusher With Soda</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">ABC Juice With Soda</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Pomegranate Juice With Soda</span><span class="menu-item-price">₹80</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>BURGER</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Aloo Tikki Burger</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Aloo Tikki Burger Cheese Burger</span><span class="menu-item-price">₹75</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>ROLL</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Roll</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Paneer Roll</span><span class="menu-item-price">₹75</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Roll With Cheese</span><span class="menu-item-price">₹75</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Paneer Roll With Cheese</span><span class="menu-item-price">₹85</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>SANDWICH</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Chilli Cheese Sandwich</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Grilled Veg Sandwich</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Corn n Cheese Sandwich</span><span class="menu-item-price">₹75</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Cheese Paneer Sandwich</span><span class="menu-item-price">₹80</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>PASTA</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Pasta in White Sauce</span><span class="menu-item-price">₹90</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Pasta in Red Sauce</span><span class="menu-item-price">₹90</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Pasta in Mixed Sauce</span><span class="menu-item-price">₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>SAMOSA</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Cocktail Samosa</span><span class="menu-item-price">₹40</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Punjabi Samosa</span><span class="menu-item-price">₹50</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>SNACKS</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">French Fries</span><span class="menu-item-price">₹60</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">French Fries with Peri Peri</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Maggi</span><span class="menu-item-price">₹70</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">French Fries with Cheese</span><span class="menu-item-price">₹75</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Maggi with Peri Peri</span><span class="menu-item-price">₹80</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Maggi with Cheese</span><span class="menu-item-price">₹90</span></div>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h2>COMBOS</h2>
+                <div class="menu-items">
+                    <div class="menu-item-row"><span class="menu-item-name">Sweet Lassi + 2 Punjabi Samosa</span><span class="menu-item-price">₹100</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Kulfi Falooda + 2 Cocktail Samosa</span><span class="menu-item-price">₹145</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Veg Pasta in White Sauce + Kit Kat Coffee</span><span class="menu-item-price">₹150</span></div>
+                    <div class="menu-item-row"><span class="menu-item-name">Belgian Chocolate Thick Shake + Brownie with Ice Cream Sundae</span><span class="menu-item-price">₹180</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Lassi Corner. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
