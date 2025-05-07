@@ -8,71 +8,85 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .menu-section {
-            background: #f9f9f9;
-            padding: 3rem 0;
+            background: #fff9f5;
+            padding: 4rem 0;
         }
         .menu-board {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            justify-content: center;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
+            padding: 0 2rem;
         }
         .menu-category {
-            background: #fff;
-            border: 2px solid #e67e22;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-            min-width: 220px;
-            max-width: 260px;
-            flex: 1 1 220px;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-direction: column;
+            background: var(--white);
+            border: 2px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .menu-category:hover {
+            transform: translateY(-5px);
         }
         .menu-category h2 {
-            background: #e67e22;
-            color: #fff;
-            font-size: 1.2rem;
+            background: var(--primary-color);
+            color: var(--white);
+            font-size: 1.4rem;
             text-align: center;
-            padding: 0.75rem 0;
-            border-radius: 10px 10px 0 0;
+            padding: 1rem 0;
             margin: 0;
             letter-spacing: 1px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
         .menu-items {
-            padding: 1rem 1.2rem 1.2rem 1.2rem;
-            flex: 1;
+            padding: 1.5rem;
         }
         .menu-item-row {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 1px dashed #eee;
-            padding: 0.4rem 0;
-            font-size: 1rem;
+            align-items: center;
+            border-bottom: 1px dashed rgba(255, 107, 0, 0.2);
+            padding: 0.8rem 0;
+            font-size: 1.1rem;
         }
         .menu-item-row:last-child {
             border-bottom: none;
         }
         .menu-item-name {
-            color: #2c3e50;
+            color: var(--text-dark);
             font-weight: 500;
+            flex: 1;
         }
         .menu-item-price {
-            color: #e67e22;
-            font-weight: 600;
+            color: var(--primary-color);
+            font-weight: 700;
             margin-left: 1rem;
             white-space: nowrap;
+            font-size: 1.2rem;
         }
-        @media (max-width: 900px) {
+        .menu-category.special {
+            border: 2px solid var(--primary-dark);
+            background: linear-gradient(135deg, #fff9f5 0%, #fff 100%);
+        }
+        .menu-category.special h2 {
+            background: var(--primary-dark);
+        }
+        @media (max-width: 768px) {
             .menu-board {
-                flex-direction: column;
-                align-items: center;
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
             }
             .menu-category {
-                max-width: 95vw;
+                max-width: 100%;
+            }
+            .menu-item-row {
+                font-size: 1rem;
+            }
+            .menu-item-price {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -100,7 +114,7 @@
 
     <section class="menu-section">
         <div class="menu-board">
-            <div class="menu-category">
+            <div class="menu-category special">
                 <h2>LASSI</h2>
                 <div class="menu-items">
                     <div class="menu-item-row"><span class="menu-item-name">Sweet Lassi</span><span class="menu-item-price">₹40/₹60</span></div>
