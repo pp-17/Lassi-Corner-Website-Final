@@ -203,8 +203,15 @@ body {
 }
 
 .view-menu {
-    border: 2.5px solid #fff !important;
-    box-shadow: 0 0 0 4px rgba(255,255,255,0.25);
+    background: transparent !important;
+    border: 2px solid #fff !important;
+    color: var(--white) !important;
+}
+
+.view-menu:hover {
+    background: rgba(255,255,255,0.1) !important;
+    color: var(--white) !important;
+    transform: translateY(-2px);
 }
 
 /* Features Section */
