@@ -10,11 +10,14 @@
     --primary-color: #ff8c00;
     --primary-dark: #ff6b00;
     --primary-light: #ffa533;
+    --secondary-color: #1e90ff;
+    --secondary-dark: #0066cc;
+    --secondary-light: #87cefa;
     --text-dark: #2c3e50;
     --text-light: #666;
     --white: #ffffff;
     --border-radius: 8px;
-    --box-shadow: 0 4px 12px rgba(255, 140, 0, 0.15);
+    --box-shadow: 0 4px 12px rgba(30, 144, 255, 0.15);
 }
 
 html {
@@ -43,11 +46,20 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-size: 2rem;
     font-weight: 800;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .nav-links {
@@ -121,7 +133,7 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    border-bottom: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--secondary-color);
 }
 
 .hero-content {
@@ -152,19 +164,19 @@ body {
 .cta-button {
     display: inline-block;
     padding: 1.2rem 2.5rem;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: var(--white);
     text-decoration: none;
     border-radius: var(--border-radius);
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--secondary-color);
     box-shadow: var(--box-shadow);
 }
 
 .cta-button:hover {
-    background: var(--primary-dark);
+    background: var(--secondary-dark);
     transform: translateY(-2px);
 }
 
@@ -208,7 +220,7 @@ body {
 
 .feature-item i {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -269,7 +281,7 @@ body {
 /* Newsletter Section */
 .newsletter {
     padding: 5rem 5%;
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, var(--secondary-light) 0%, var(--secondary-color) 100%);
     color: var(--white);
     text-align: center;
 }
@@ -489,7 +501,7 @@ body {
 
 /* Footer */
 footer {
-    background: var(--primary-dark);
+    background: var(--secondary-dark);
     color: var(--white);
     padding: 3rem 5%;
     text-align: center;
@@ -510,7 +522,7 @@ footer {
 }
 
 .social-links a:hover {
-    color: var(--primary-light);
+    color: var(--secondary-light);
 }
 
 /* Responsive Design */
