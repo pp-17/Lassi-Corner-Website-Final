@@ -164,10 +164,10 @@ body {
 
 .hero h1 {
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+    color: #cc3700;
 }
 
 .hero p {
