@@ -134,6 +134,7 @@ body {
     font-weight: 800;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #000000;
 }
 
 .hero p {
