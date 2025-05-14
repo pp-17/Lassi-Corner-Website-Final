@@ -10,9 +10,6 @@
     --primary-color: #ff4500;
     --primary-dark: #cc3700;
     --primary-light: #ff6b33;
-    --secondary-color: #1e90ff;
-    --secondary-dark: #0066cc;
-    --secondary-light: #87cefa;
     --text-dark: #2c3e50;
     --text-light: #666;
     --white: #ffffff;
@@ -81,7 +78,7 @@ body {
 .nav-links a:hover,
 .nav-links a.active {
     color: var(--primary-color);
-    background-color: rgba(255, 107, 0, 0.1);
+    background-color: rgba(255, 69, 0, 0.1);
 }
 
 .hamburger {
@@ -209,7 +206,7 @@ body {
     background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    border: 1px solid rgba(255, 140, 0, 0.2);
+    border: 1px solid rgba(255, 69, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
@@ -412,7 +409,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
-    border-bottom: 1px solid rgba(255, 107, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 69, 0, 0.1);
 }
 
 .map-section {
@@ -451,7 +448,7 @@ body {
     background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    border: 1px solid rgba(255, 107, 0, 0.1);
+    border: 1px solid rgba(255, 69, 0, 0.1);
 }
 
 .contact-form {
@@ -459,7 +456,7 @@ body {
     background: var(--white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    border: 1px solid rgba(255, 107, 0, 0.1);
+    border: 1px solid rgba(255, 69, 0, 0.1);
 }
 
 .form-group {
@@ -470,7 +467,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid rgba(255, 107, 0, 0.2);
+    border: 2px solid rgba(255, 69, 0, 0.2);
     border-radius: var(--border-radius);
     font-size: 1rem;
     transition: border-color 0.3s ease;
