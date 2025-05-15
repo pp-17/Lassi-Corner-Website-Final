@@ -317,14 +317,24 @@ body {
     color: white;
     height: 300px;
 }
-
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 69, 0, 0.13); /* slightly more orange tint */
+    z-index: 1;
+}
 .link-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 0;
 }
-
 .link-card:hover img {
     transform: scale(1.1);
 }
@@ -344,6 +354,7 @@ body {
     right: 0;
     padding: 2rem;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    z-index: 2;
 }
 
 .link-content h3 {
