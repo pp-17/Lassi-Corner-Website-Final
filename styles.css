@@ -180,15 +180,15 @@ body {
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
-    text-shadow: 0 6px 32px rgba(44, 62, 80, 0.55), 0 2px 8px rgba(0,0,0,0.22);
-    background: linear-gradient(90deg, #ff6b33 0%, #ff4500 60%, #cc3700 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+    color: #ff4500;
     letter-spacing: 2px;
     line-height: 1.1;
     display: inline-block;
+    text-shadow: none;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
 }
 
 .hero p {
