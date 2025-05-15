@@ -465,15 +465,15 @@ footer {
 }
 
 .link-card[href="menu.html"] img {
-    filter: blur(6px) brightness(0.85);
+    filter: blur(5.4px) brightness(0.85);
 }
 
 .link-card[href="contact.html"] img {
-    filter: blur(6px) brightness(0.85);
+    filter: blur(5.4px) brightness(0.85);
 }
 
 .link-card[href="about.html"] img {
-    filter: blur(6px) brightness(0.85);
+    filter: blur(5.4px) brightness(0.85);
 }
 
 .link-content {
