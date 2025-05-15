@@ -239,13 +239,26 @@ body {
 
 /* Features Section */
 .features {
+    position: relative;
     padding: 6rem 5%;
     background: var(--white);
     padding-left: 5vw;
     padding-right: 5vw;
 }
-
+.features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 69, 0, 0.10); /* semi-transparent orange */
+    border-radius: var(--border-radius);
+    z-index: 0;
+}
 .feature-grid {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
@@ -884,4 +897,12 @@ a:hover::after, a:focus::after {
     width: 32px;
     height: 32px;
     background: #fff;
+}
+
+.order-now-btn .order-logo[alt="Zomato"] {
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
 } 
