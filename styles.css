@@ -34,6 +34,12 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: #fff8f0;
+    transition: opacity 0.25s linear;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.25s linear;
 }
 
 section {

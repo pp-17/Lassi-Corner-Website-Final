@@ -46,21 +46,21 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 
 // Add scroll animation for elements
-const observerOptions = {
+const observerOptionsScroll = {
     threshold: 0.1
 };
 
-const observer = new IntersectionObserver((entries) => {
+const observerScroll = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate');
         }
     });
-}, observerOptions);
+}, observerOptionsScroll);
 
 // Observe elements that should animate on scroll
 document.querySelectorAll('.feature-item, .menu-category, .about-gallery img').forEach(el => {
-    observer.observe(el);
+    observerScroll.observe(el);
 });
 
 // Handle form submission
@@ -84,24 +84,24 @@ document.querySelectorAll('img').forEach(img => {
 // Scroll Animation for Menu Items
 const menuItems = document.querySelectorAll('.menu-item');
 
-const observerOptions = {
+const observerOptionsMenu = {
     threshold: 0.2
 };
 
-const observer = new IntersectionObserver((entries) => {
+const observerMenu = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
         }
     });
-}, observerOptions);
+}, observerOptionsMenu);
 
 menuItems.forEach(item => {
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
     item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(item);
+    observerMenu.observe(item);
 });
 
 // Navbar Background Change on Scroll
@@ -126,4 +126,21 @@ window.addEventListener('scroll', () => {
     }
     
     lastScroll = currentScroll;
+});
+
+// Fade-out transition on page navigation
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+    if (link.target !== '_blank' && link.href && !link.href.startsWith('javascript:')) {
+        link.addEventListener('click', function(e) {
+            // Only fade out for same tab navigation
+            if (!link.hash && link.hostname === window.location.hostname) {
+                e.preventDefault();
+                document.body.classList.add('fade-out');
+                setTimeout(() => {
+                    window.location = link.href;
+                }, 200);
+            }
+        });
+    }
 }); 
