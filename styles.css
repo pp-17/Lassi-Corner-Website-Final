@@ -927,4 +927,14 @@ a:hover::after, a:focus::after {
     border-radius: 50%;
     width: 32px;
     height: 32px;
+}
+
+.order-now-label {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 1.2rem;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(44,62,80,0.10);
 } 
