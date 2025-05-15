@@ -266,7 +266,7 @@ footer {
     width: 100%;
     height: 100%;
     background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/46/81/21/lassi-menu1.jpg?w=900&h=500&s=1') center center/cover no-repeat;
-    opacity: 0.45;
+    opacity: 0.35;
     filter: blur(8px) brightness(0.7);
     z-index: 1;
 }
@@ -282,20 +282,16 @@ footer {
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
-    color: #ff4500;
+    color: var(--white);
     letter-spacing: 2px;
     line-height: 1.1;
-    display: inline-block;
-    text-shadow: none;
-    background: none;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    background-clip: unset;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
     font-size: 1.8rem;
     margin-bottom: 2.5rem;
+    color: var(--white);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -317,26 +313,31 @@ footer {
     transition: all 0.3s ease;
     border: 2px solid var(--primary-color);
     box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 2;
 }
 
 .cta-button:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    color: var(--white);
 }
 
 .cta-button.secondary {
     background: transparent;
     border: 2px solid var(--white);
+    color: var(--white);
 }
 
 .cta-button.secondary:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-2px);
+    color: var(--white);
 }
 
 .view-menu {
     background: transparent !important;
-    border: 2px solid #fff !important;
+    border: 2px solid var(--white) !important;
     color: var(--white) !important;
 }
 
@@ -383,6 +384,8 @@ footer {
     box-shadow: var(--box-shadow);
     border: 1px solid rgba(255, 69, 0, 0.2);
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .feature-item:hover {
@@ -400,6 +403,14 @@ footer {
     margin-bottom: 1rem;
     font-size: 1.4rem;
     font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-item p {
+    color: var(--text-dark);
+    position: relative;
+    z-index: 2;
 }
 
 /* Quick Links Section */
@@ -471,7 +482,16 @@ footer {
 }
 
 .link-content h3 {
+    color: var(--white);
     margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.link-content p {
+    color: var(--white);
+    position: relative;
+    z-index: 2;
 }
 
 /* Newsletter Section */
@@ -510,6 +530,14 @@ footer {
     border: none;
     border-radius: 5px;
     font-size: 1rem;
+    background: var(--white);
+    color: var(--text-dark);
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-form input::placeholder {
+    color: var(--text-light);
 }
 
 /* Menu Page Styles */
@@ -675,6 +703,10 @@ footer {
     border-radius: var(--border-radius);
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    background: var(--white);
+    color: var(--text-dark);
+    position: relative;
+    z-index: 2;
 }
 
 .form-group input:focus,
@@ -683,20 +715,31 @@ footer {
     outline: none;
 }
 
+.form-group label {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
 .submit-button {
     background: var(--primary-color);
     color: var(--white);
     padding: 1rem 2rem;
-    border: 2px solid #fff;
+    border: 2px solid var(--white);
     border-radius: var(--border-radius);
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
 }
 
 .submit-button:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
+    color: var(--white);
 }
 
 /* Footer */
