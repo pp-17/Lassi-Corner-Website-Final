@@ -26,8 +26,10 @@ p, a, li, label, input, textarea, span, button, th, td, div {
     --box-shadow: 0 4px 12px rgba(255, 69, 0, 0.15);
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -37,6 +39,8 @@ body {
     border: 1px solid #FFA500;
     box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
     transition: opacity 0.25s linear;
+    position: relative;
+    overflow-x: hidden;
 }
 
 body.fade-out {
@@ -257,6 +261,7 @@ footer {
     color: var(--white);
     border-bottom: 4px solid var(--primary-dark);
     overflow: hidden;
+    padding-top: 90px; /* Add space for navbar on mobile */
 }
 
 .hero-bg {
@@ -1126,16 +1131,24 @@ a:hover::after, a:focus::after {
     text-align: center;
     margin: 0.5rem 0;
   }
+  .navbar {
+    background: #fff !important;
+  }
 }
 
 @media (max-width: 600px) {
   .newsletter-form {
     flex-direction: column;
     gap: 0.5rem;
+    align-items: stretch;
   }
   .newsletter-form input, .newsletter-form button {
     width: 100%;
     box-sizing: border-box;
+    margin: 0;
+  }
+  .newsletter-form button {
+    margin-top: 0.5rem;
   }
   .link-card {
     height: auto;
@@ -1148,6 +1161,9 @@ a:hover::after, a:focus::after {
   section, .features, .quick-links, .newsletter, .testimonials-section, .menu-section, .contact-section {
     padding-left: 2vw;
     padding-right: 2vw;
+  }
+  .hero {
+    padding-top: 110px;
   }
 }
 
