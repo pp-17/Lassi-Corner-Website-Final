@@ -177,11 +177,18 @@ body {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1.5rem;
-    text-shadow: 0 4px 24px rgba(44, 62, 80, 0.45), 0 2px 8px rgba(0,0,0,0.18);
-    color: #cc3700;
+    text-shadow: 0 6px 32px rgba(44, 62, 80, 0.55), 0 2px 8px rgba(0,0,0,0.22);
+    background: linear-gradient(90deg, #ff6b33 0%, #ff4500 60%, #cc3700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    display: inline-block;
 }
 
 .hero p {
