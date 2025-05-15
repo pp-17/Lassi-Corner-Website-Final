@@ -33,7 +33,9 @@ html {
 body {
     line-height: 1.6;
     color: var(--text-dark);
-    background-color: #fff8f0;
+    background-color: #fff;
+    border: 1px solid #FFA500;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
     transition: opacity 0.25s linear;
 }
 
