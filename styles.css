@@ -876,4 +876,12 @@ a:hover::after, a:focus::after {
     width: 32px;
     object-fit: contain;
     display: block;
+}
+
+.order-now-btn .order-logo {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background: #fff;
 } 
