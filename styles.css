@@ -354,6 +354,10 @@ body {
     filter: blur(6px) brightness(0.85);
 }
 
+.link-card[href="about.html"] img {
+    filter: blur(6px) brightness(0.85);
+}
+
 .link-content {
     position: absolute;
     bottom: 0;
@@ -581,7 +585,7 @@ body {
     background: var(--primary-color);
     color: var(--white);
     padding: 1rem 2rem;
-    border: none;
+    border: 2px solid #fff;
     border-radius: var(--border-radius);
     font-weight: 600;
     cursor: pointer;
