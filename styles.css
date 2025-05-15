@@ -120,6 +120,11 @@ footer {
     .order-now-label {
         font-size: unset;
     }
+    .about-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
 }
 @media (max-width: 480px) {
     h1 {
@@ -1051,4 +1056,67 @@ a:hover::after, a:focus::after {
     margin-bottom: 2.5rem;
     letter-spacing: 1px;
     text-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    box-shadow: 0 8px 24px rgba(44,62,80,0.08);
+    border-bottom: 2px solid var(--primary-color);
+    z-index: 999;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .newsletter-form input, .newsletter-form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .link-card {
+    height: auto;
+    min-height: 180px;
+    max-height: 260px;
+  }
+  .feature-item, .link-card, .testimonial-card, .info-card, .menu-category {
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+  }
+  section, .features, .quick-links, .newsletter, .testimonials-section, .menu-section, .contact-section {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .logo-img {
+    height: 28px;
+    width: 28px;
+  }
+  .page-header h1, .hero h1 {
+    font-size: 1.1rem !important;
+  }
 } 
