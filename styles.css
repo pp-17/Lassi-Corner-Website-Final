@@ -31,7 +31,9 @@ html {
 }
 
 body {
-    line-height: 1.6;
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
     color: var(--text-dark);
     background-color: #fff8f0;
 }
@@ -41,7 +43,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 5%;
+    padding: 1.5rem 6vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -601,7 +603,7 @@ body {
 footer {
     background: var(--primary-dark);
     color: var(--white);
-    padding: 3rem 5%;
+    padding: 3.5rem 6vw;
     text-align: center;
 }
 
@@ -644,7 +646,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .page-header, .about-section, .features, .quick-links, .newsletter, .testimonials-section, .menu-section, .contact-section {
+    section, .features, .quick-links, .newsletter, .testimonials-section, .menu-section, .contact-section {
         padding-left: 3vw;
         padding-right: 3vw;
     }
@@ -666,6 +668,12 @@ footer {
         min-height: 32px;
         max-width: 40px;
         max-height: 40px;
+    }
+    .feature-item, .link-card, .testimonial-card, .info-card, .menu-category {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+    .order-now-label {
+        font-size: 1.3rem;
     }
 }
 
@@ -694,6 +702,16 @@ footer {
 
     .about-gallery img {
         height: 200px;
+    }
+
+    h1 {
+        font-size: 2.2rem !important;
+    }
+    h2 {
+        font-size: 1.4rem !important;
+    }
+    .feature-item, .link-card, .testimonial-card, .info-card, .menu-category {
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
     }
 }
 
@@ -752,7 +770,7 @@ footer {
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
+    gap: 2.8rem;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -884,7 +902,8 @@ a:hover::after, a:focus::after {
 .order-now-group {
     display: flex;
     gap: 1rem;
-    margin-top: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -934,7 +953,7 @@ a:hover::after, a:focus::after {
     font-size: 2rem;
     font-weight: 900;
     color: #fff;
-    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
     letter-spacing: 1px;
     text-shadow: 0 2px 8px rgba(44,62,80,0.10);
 } 
